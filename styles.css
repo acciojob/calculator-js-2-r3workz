@@ -1,1 +1,45 @@
 /*  your css code here. If applicable */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 16px;
+	font-family: monospace;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	border: 1px solid #999;
+	box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.5);
+}
+.display {
+	width: 320px;
+	height: 100px;
+	border: 1px solid #999;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: end;
+}
+.buttons-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 80px);
+	grid-template-rows: repeat(5, 80px);
+}
+button {
+	background: transparent;
+	border: 1px solid #999;
+	font-size: 2rem;
+}
