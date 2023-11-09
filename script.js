@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			case 'equal':
 				try {
 					display = eval(display).toString()
+					if (display === 'Infinity' || display === '-Infinity') {
+						display = 'Error'
+					}
 				} catch (e) {
 					display = 'Error'
 				}
